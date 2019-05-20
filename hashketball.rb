@@ -178,7 +178,7 @@ def player_stats(player_name)
       player_stats_hash[nil] = game_hash[home_or_away][:players][player_name]
     end
   end
-  player_stats_hash.values
+  player_stats_hash.delete(key)
 end
 
 
