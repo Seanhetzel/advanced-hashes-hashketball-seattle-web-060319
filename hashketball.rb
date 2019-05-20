@@ -171,7 +171,7 @@ def player_numbers(team)
 end
 
 def player_stats(player_name)
-  game_hash.each do |home_or_away, team_info|
+  #game_hash.each do |home_or_away, team_info|
 end
 
 
