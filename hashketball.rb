@@ -222,6 +222,7 @@ def winning_team
     winning_team_hash[team_points] = game_hash[home_or_away][:team_name] 
   end
   winning_team_hash.keys.sort
+  winning_team_hash
 end
 
 def player_with_longest_name
