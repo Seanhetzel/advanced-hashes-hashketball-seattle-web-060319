@@ -180,8 +180,9 @@ def player_stats(player_name)
   player_stats_hash.delete(player_name)
 end
 
-def bit_shoe_rebounds
-  play_w_largest_shoe = ""
+def big_shoe_rebounds
+  player_w_largest_shoe = ""
+  player_rebounds = 0
 end
 
 
