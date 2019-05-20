@@ -122,8 +122,8 @@ end
 
 def num_points_scored(player_name)
   points_scored = 0
-  game_hash.each do |home_or_away, information|
-    if information[:players].include?(player_name)
+  game_hash.each do |home_or_away, team_info|
+    if team_info[:players].include?(player_name)
       points_scored = game_hash[home_or_away][:players][player_name][:points]
     end
   end
@@ -132,8 +132,8 @@ end
 
 def shoe_size(player_name)
   shoe_size_output = 0
-  game_hash.each do |home_or_away, information|
-    if information[:players].include?(player_name)
+  game_hash.each do |home_or_away, team_info|
+    if team_info[:players].include?(player_name)
       shoe_size_output = game_hash[home_or_away][:players][player_name][:shoe]
     end
   end
@@ -142,8 +142,8 @@ end
 
 def team_colors(team)
   team_colors_array = []
-  game_hash.each do |home_or_away, information|
-    if information[:team_name] == team
+  game_hash.each do |home_or_away, team_info|
+    if team_info[:team_name] == team
       team_colors_array << game_hash[home_or_away][:colors]
     end
   end
@@ -152,7 +152,7 @@ end
 
 def team_names
   team_name_array = []
-  game_hash.each do |home_or_away, information|
+  game_hash.each do |home_or_away, team_info|
     team_name_array << game_hash[home_or_away][:team_name]
   end
   team_name_array
@@ -160,9 +160,9 @@ end
 
 def player_numbers(team)
   jersey_numbers = []
-  game_hash.each do |home_or_away, information|
-    if information[:team_name] == team
-      information[:players].each do |player_name, player_data|
+  game_hash.each do |home_or_away, team_info|
+    if team_info[:team_name] == team
+      team_info[:players].each do |player_name, player_data|
         jersey_numbers << player_data[:number]
       end
     end
@@ -171,7 +171,7 @@ def player_numbers(team)
 end
 
 def player_stats(player_name)
-  
+  game_hash.each do |home_or_away, team_info|
 end
 
 
