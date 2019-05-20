@@ -131,13 +131,13 @@ def num_points_scored(player_name)
 end
 
 def shoe_size(player_name)
-  shoe = 0
+  shoe_size_output = 0
   game_hash.each do |home_or_away, information|
     if information[:players].include?(player_name)
-      shoe = game_hash[home_or_away][:players][player_name][:shoe]
+      shoe_size_output = game_hash[home_or_away][:players][player_name][:shoe]
     end
   end
-  shoe
+  shoe_size_output
 end
 
 
