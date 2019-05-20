@@ -123,7 +123,7 @@ end
 def num_points_scored(player_name)
   game_hash.each do |location, information|
     if information[:players].include?(player_name)
-      game_hash[location][information][:players][player_name][:points]
+      game_hash[location][:players][player_name][:points]
     end
   end
 end
