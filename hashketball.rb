@@ -123,7 +123,7 @@ end
 def num_points_scored(player_name)
   game_hash.each do |home_or_away, information|
     #binding.pry
-    if home_or_away.include?(player_name)
+    if home_or_away[information].include?(player_name)
       #binding.pry
       game_hash[home_or_away][:players][player_name][:points]
     end
