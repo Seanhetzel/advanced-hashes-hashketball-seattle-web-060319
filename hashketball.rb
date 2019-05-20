@@ -214,12 +214,13 @@ def winning_team
   game_hash.each do |home_or_away, team_info|
     game_hash[home_or_away][:players].each do |player_name, player_stats|
       team_points += player_stats[:points]
+    end
     winning_team_hash[team_points] = game_hash[home_or_away][:team_name]    
   #      team_w_most_points = team_info[:team_name]
       end
     end
   end
-  team_w_most_points
+  team_w_most_points[team_w_most_points.keys.sort[0]]
 end
 
 def player_with_longest_name
