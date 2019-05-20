@@ -147,7 +147,7 @@ def team_colors(team)
       team_colors_array.push(game_hash[home_or_away][:colors])
     end
   end
-  team_colors_array
+  team_colors_array.flatten
 end
 
 #def team_colors(team)
