@@ -208,7 +208,7 @@ def most_points_scored
 end
 
 def winning_team
-  #team_points = 0
+  team_points = 0
   #team_w_most_points = ""
   winning_team_hash = {}
   game_hash.each do |home_or_away, team_info|
