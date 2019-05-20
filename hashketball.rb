@@ -199,7 +199,7 @@ def most_points_scored
   game_hash.each do |home_or_away, team_info|
     game_hash[home_or_away][:players].each do |player_name, player_stats|
       if player_stats[:points] > most_player_points
-        player_w_most_points << player_name
+        player_w_most_points = player_name
       end
     end
   end
