@@ -214,7 +214,7 @@ def winning_team
   game_hash.each do |home_or_away, team_info|
     game_hash[home_or_away][:players].each do |player_name, player_stats|
       team_points += player_stats[:points]
-      binding.pry
+      #binding.pry
        
   #      team_w_most_points = team_info[:team_name]
       
