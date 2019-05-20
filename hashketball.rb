@@ -217,7 +217,7 @@ def winning_team
     end
     winning_team_hash[team_points] = game_hash[home_or_away][:team_name]    
   #      team_w_most_points = team_info[:team_name]
-      end
+      
     end
   end
   team_w_most_points[team_w_most_points.keys.sort[0]]
