@@ -171,10 +171,10 @@ def player_numbers(team)
 end
 
 def player_stats(player_name)
-  player_stats_hash = {}
+  #player_stats_hash = {}
   game_hash.each do |home_or_away, team_info|
     if team_info[:players].include?(player_name)
-      player_stats_hash << game_hash[home_or_away][:players][player_name]
+      player_stats_hash = game_hash[home_or_away][:players][player_name]
     end
   end
   player_stats_hash
