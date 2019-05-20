@@ -181,7 +181,7 @@ def player_stats(player_name)
 end
 
 def bit_shoe_rebounds
-  
+  play_w_largest_shoe = ""
 end
 
 
