@@ -129,6 +129,7 @@ def num_points_scored(player_name)
       points = game_hash[home_or_away][:players][player_name][:points]
     end
   end
+  points
 end
 #num_points_scored("Jeff Adrien")
 
