@@ -141,8 +141,9 @@ def shoe_size(player_name)
 end
 
 def team_colors
+  team_name_array = []
   game_hash.each do |home_or_away, information|
-    information[:team_name]
+    team_name_array << game_hash[home_or_away][:team_name]
   end
 end
 
